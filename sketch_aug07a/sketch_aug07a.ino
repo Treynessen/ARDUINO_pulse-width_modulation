@@ -1,5 +1,4 @@
 void setup() {
-  Serial.begin(9600);
   pinMode(7, INPUT_PULLUP); // Включить/выключить светодиод
   pinMode(8, INPUT_PULLUP); // Повысить яркость
   pinMode(12, INPUT_PULLUP); // Понизить яркость
