@@ -23,7 +23,7 @@ void LED_CONTROL(){
     LED_COUNT = 0;
     LED_ON = true;
   }
-  if(LED_ON) digitalWrite(SIGNAL_PIN_NUMS[LED_COUNT++], HIGH);
+  if(LED_ON) analogWrite(SIGNAL_PIN_NUMS[LED_COUNT++], bright);
   else digitalWrite(SIGNAL_PIN_NUMS[LED_COUNT++], LOW);
   while(!digitalRead(7));
   time_for_on_off = millis();
